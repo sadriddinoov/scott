@@ -1,0 +1,89 @@
+
+.feedback {
+    
+    &__container {
+        @include display;
+        padding: 102px;
+    }
+    
+    &__heading {
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+        max-width: 415px;
+        width: 100%;
+    }
+    
+    &__btn-wrapper {
+        gap: 18px;
+    }
+  
+}
+
+.big__container {
+    background-image: url(./../../images/feedback.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+    .big__container {
+        background-image: url(./../../images/feedback.png);
+    }
+  
+}
+
+@media only screen and (max-width: 900px) {
+    
+.feedback {
+    
+    &__container {
+     flex-direction: column;
+     padding: 63px;
+    }
+    
+    &__heading {
+        margin-bottom: 40px;
+        text-align: center;
+        max-width: 311px;
+        width: 100%;
+    }
+    
+    &__btn-wrapper {
+        gap: 13px;
+    }
+}
+}
+
+
+@media only screen and (max-width: 530px) {
+    .feedback {
+    
+        &__container {
+         flex-direction: column;
+         padding: 63px;
+         padding-bottom: 125px;
+        }
+        
+        &__heading {
+            margin-bottom: 40px;
+            text-align: center;
+            max-width: 411px;
+            width: 100%;
+        }
+        
+        &__btn-wrapper {
+            display: flex;
+            gap: 13px;
+        }
+    }
+}

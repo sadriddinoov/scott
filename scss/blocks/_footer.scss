@@ -1,0 +1,117 @@
+.footer {
+
+    &__container {
+        @include display;
+        padding: 35px 160px;
+        margin-bottom: 150px;
+    }
+
+    &__img {
+        width: 108px;
+        height: 29px;
+        object-fit: contain;
+        margin-right: 60px;
+    }
+
+    &__left-side {
+        @include display;
+    }
+
+    &__list {
+        @include display;
+        gap: 32px;
+    }
+
+    &__link {
+        font-size: 15px;
+        line-height: 25px;
+        color: $dgray;
+        transition: all 0.3s ease;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+
+    &__r-list {
+        @include display;
+        gap: 24px;
+    }
+
+    .big__container {
+        background-color: #333A44;
+        background-image: none;
+    }
+
+    &__r-img:hover path {
+        fill: #E5ECF4;
+    }
+   
+}
+
+@media only screen and (max-width: 900px) {
+    .footer {
+    
+        &__img {
+            margin-right: 50;
+        }
+    
+        &__r-list {
+            @include display;
+            gap: 24px;
+        }
+    
+        .big__container {
+            background-color: #333A44;
+            background-image: none;
+        }
+    
+        &__r-img:hover path {
+            fill: #E5ECF4;
+        }
+       
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .footer {
+
+        &__container {
+            @include display;
+            flex-direction: column;
+        }
+    
+        &__img {
+            object-fit: contain;
+            margin-right: 0px;
+            margin-bottom: 41px;
+        }
+    
+        &__left-side {
+            @include display;
+            flex-direction: column;
+        }
+    
+        &__list {
+            @include display;
+            gap: 20px;
+            flex-direction: column ;
+            margin-bottom: 80px;
+        }
+    
+        &__r-list {
+            @include display;
+            gap: 24px;
+        }
+    
+        .big__container {
+            background-color: #333A44;
+            background-image: none;
+        }
+    
+        &__r-img:hover path {
+            fill: #E5ECF4;
+        }
+       
+    }
+}

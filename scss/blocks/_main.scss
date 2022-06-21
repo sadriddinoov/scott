@@ -1,0 +1,188 @@
+.main {
+    
+    
+    .big__container {
+        background-image: url(./../../images/scooter.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    
+    &__container {
+        padding: 153px 0;
+    }
+    
+    &__wrapper {
+        max-width: 500px;
+        width: 100%;
+    }
+    
+    &__heading {
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    
+    &__text {
+        position: relative;
+        margin-bottom: 40px;
+        margin-left: 95px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 0.7);
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: calc(100% + 57px);
+            transform: translateY(-50%);
+            display: inline-block;
+            width: 300px;
+            height: 15px;
+            background-color: $yellow;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: calc(100% + 57px);
+            transform: translateY(-9%);
+            display: inline-block;
+            width: 447px;
+            height: 138px;
+            background-image: url(./../../images/arrow.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+    }
+    
+    &__btn {
+        margin-left: 95px;
+    }
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    
+    .big__container {
+        background-image: url(./../../images/scooter2x.jpg);
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .main {
+        
+        
+        .big__container {
+            background-image: url(./../../images/scooter.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            max-width: 900px;
+            width: 100%;
+        }
+        
+        
+        &__container {
+            padding-top: 130px;
+            padding-bottom: 250px;
+        }
+        
+        &__wrapper {
+            max-width: 573px;
+            width: 100%;
+            margin-left: 97px;
+        }
+        
+        &__heading {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        
+        &__text {
+            margin-bottom: 32px;
+            margin-left: 0;
+            text-align: center;
+            
+            &::before {
+                display: none;
+            }
+            
+            &::after {
+                top:  100%;
+                left: -100%;
+                transform: translate( 75%,   100%);
+            }
+            
+        }
+        
+        &__btn {
+            margin-left: 150px;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .main {
+        
+        
+        
+        
+        &__container {
+            padding: 139px 32px 167px 32px;
+            max-width: 475px;
+            width: 100%;
+        }
+        
+        &__wrapper {
+            max-width: 311px;
+            width: 100%;
+            margin-left: 0px;
+        }
+        
+        &__heading {
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: -1.78571px;
+            margin-bottom: 24px;
+        }
+        
+        &__text {
+            margin-bottom: 34px;
+            margin-left: 0;
+            text-align: center;
+            
+            &::before {
+                display: none;
+            }
+            
+            &::after {
+                top: 100%;
+                right:  100%;
+                transform: translateX(  -5px) translateY(  75px);
+
+            }
+            
+        }
+        
+        &__btn {
+            margin-left: 50px;
+        }
+    }
+}
